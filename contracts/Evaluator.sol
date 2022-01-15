@@ -197,7 +197,7 @@ contract Evaluator
 
 		// Check that ExerciceSolution is a minter to ExerciceSolutionERC20
 		// Check that we are not a minter to ExerciceSolutionERC20
-		require(ExerciceSolutionERC20.isMinter(address(studentExerciceSolution[msg.sender])), "ExerciceSolution is not minter");
+		require(ExerciceSolutionERC20.isMinter(address(studentExerciceSolution[msg.sender])), "ExerciceSolution is not minter"); // ###
 		require(!ExerciceSolutionERC20.isMinter(address(this)), "Evaluator is minter");
 
 		// Check that we can not mint ExerciceSolutionERC20 tokens 
